@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SB portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <h1>SB <span class="color">portfolio</span></h1>
+          </div>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#porfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h3>Hello,</h3>
+          <h1>I am <span class="color">Shweta</span></h1>
+          <h2>fontend Developer</h2>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------about------------------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/A profile image.jpeg" alt="#" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus voluptate vero quod qui doloremque sequi magni
+              corporis placeat possimus veritatis, earum ea voluptatum atque ab
+              nobis fugit rerum? Accusantium, quisquam Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Eos inventore, ea facere
+              perspiciatis totam alias molestiae dolore enim illum et
+              repellendus, quidem minima ratione. Beatae fugit iusto perferendis
+            </p>
+            <div class="tab-title">
+              <p
+                class="tab-links active-link"
+                onclick="slideTab(event,'skill')"
+              >
+                Skill
+              </p>
+              <p class="tab-links" onclick="slideTab(event,'education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="slideTab(event,'exprience')">
+                Exprience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skill">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />
+                  Design Web/App Interface
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  Web/App Developer
+                </li>
+                <li>
+                  <span>App Developer</span><br />
+                  Building IOS/Android App
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>12th 2015-2017</span><br />
+                  Govt-High-school
+                </li>
+                <li>
+                  <span>BCA 2017-2020</span><br />
+                  MDU University
+                </li>
+                <li>
+                  <span>MCA 2020-2023</span><br />
+                  Gurugram University
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="exprience">
+              <ul>
+                <li>
+                  <span>Eazy-Pizy Enterprices</span><br />
+                  Internship App Development
+                </li>
+                <li>
+                  <span>Web Development Project</span><br />
+                  Sample Project Practice
+                </li>
+                <li>
+                  <span>Collage Project</span><br />
+                  Mantrimotil Web Appliction
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------services------------------------------------------   -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-crop" style="color: #ffffff"></i>
+            <h1>Front End Design</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              tenetur laudantium amet? Non nostrum iste consectetur, itaque modi
+              veritatis culpa obcaecati fuga maiores, porro ab quos, inventore
+              mollitia totam tenetur?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code" style="color: #ffffff"></i>
+            <h1>Web Developer</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              tenetur laudantium amet? Non nostrum iste consectetur, itaque modi
+              veritatis culpa obcaecati fuga maiores, porro ab quos, inventore
+              mollitia totam tenetur?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios" style="color: #ffffff"></i>
+            <h1>Flutter development</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              tenetur laudantium amet? Non nostrum iste consectetur, itaque modi
+              veritatis culpa obcaecati fuga maiores, porro ab quos, inventore
+              mollitia totam tenetur?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------Portfolio-----------------------------------------------? -->
+    <div id="porfolio">
+      <div class="container">
+        <h1 class="sub-title">My Best Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/amazone.PNG" alt="work" />
+            <div class="layer">
+              <h3>Amazone Web Clone</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-link" style="color: #fb8500"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/parallax.PNG" alt="work" />
+            <div class="layer">
+              <h3>Amazone Web Clone</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-link" style="color: #fb8500"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/music.PNG" alt="work" />
+            <div class="layer">
+              <h3>Amazone Web Clone</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-link" style="color: #fb8500"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/youtube.PNG" alt="work" />
+            <div class="layer">
+              <h3>Amazone Web Clone</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-link" style="color: #fb8500"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/blog.PNG" alt="work" />
+            <div class="layer">
+              <h3>Amazone Web Clone</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-link" style="color: #fb8500"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/landing.PNG" alt="work" />
+            <div class="layer">
+              <h3>Amazone Web Clone</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-link" style="color: #fb8500"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/rasturent.PNG" alt="work" />
+            <div class="layer">
+              <h3>Amazone Web Clone</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-link" style="color: #fb8500"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/tribute.PNG" alt="work" />
+            <div class="layer">
+              <h3>Amazone Web Clone</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-link" style="color: #fb8500"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/amazone.PNG" alt="work" />
+            <div class="layer">
+              <h3>Amazone Web Clone</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-link" style="color: #fb8500"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- ----------------------------Contact----------------------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>Shwetabairwa027@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+91-9871617208</p>
+            <div class="socail-icons">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="Resume/Shweta's Resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" />
+              <input type="email" name="Email" placeholder="Your Email" />
+              <textarea
+                name="Massage"
+                rows="6"
+                placeholder="Your Massage"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright by sb. made with <i class="fa-solid fa-heart"></i> by Shweta
+          Bairwa
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxvk5tIY4Q01ff9JdMMNPl2zMa-A0KOCeaSVL-qvImmbYkveKmq1g5uCs-xysKYoJBh/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
