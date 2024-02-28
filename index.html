@@ -16,7 +16,7 @@
   <body>
     <nav>
       <div class="logo">
-        <h1>SB <span class="color">portfolio</span></h1>
+        <h1>SB <span class="color">portfolio.</span></h1>
       </div>
       <ul id="sidemenu">
         <li><a href="#">Home</a></li>
@@ -28,48 +28,57 @@
       </ul>
       <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
-    <div id="header">
+    <section>
       <div class="container">
-        <div class="header-text">
-          <h3>Hello,</h3>
-          <h1>I am <span class="color">Shweta</span></h1>
-          <h2>fontend Developer</h2>
+        <div id="header">
+          <div class="header-text">
+            <h1>Hi, I am <span class="color">Shweta</span></h1>
+            <p>Front-end Developer</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- ----------------------------about------------------------------------- -->
-    <div id="about">
+    <section id="about">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
             <img src="images/A profile image.jpeg" alt="#" />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About me.</h1>
+            <h1 class="sub-title">About <span class="color">me.</span></h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellendus voluptate vero quod qui doloremque sequi magni
-              corporis placeat possimus veritatis, earum ea voluptatum atque ab
-              nobis fugit rerum? Accusantium, quisquam Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Eos inventore, ea facere
-              perspiciatis totam alias molestiae dolore enim illum et
-              repellendus, quidem minima ratione. Beatae fugit iusto perferendis
+              Hello, I'm Shweta, a versatile Front-End Developer and Flutter
+              Developer based in Gurugram. With a post-graduation degree from
+              Gurugram College, I'm passionate about crafting seamless digital
+              experiences that bring ideas to life. My approach to work is
+              guided by a relentless pursuit of excellence and a keen eye for
+              detail. I believe in the power of collaboration and continuous
+              learning, constantly seeking out new technologies and
+              methodologies to enhance my skills and deliver innovative
+              solutions. I kickstarted my journey as a Front-End Developer
+              through an internship at Eazy Pizy Enterprise, where I had the
+              opportunity to work on live projects, honing my skills in HTML,
+              CSS, JavaScript, and React. This hands-on experience paved the way
+              for me to tackle a variety of challenges with confidence. From
+              creating a dynamic code editor to crafting a personal portfolio
+              and developing a restaurant application, I've embarked on numerous
+              practice projects that have enriched my understanding of web
+              development. Each project has been a testament to my dedication to
+              continuous improvement and my passion for pushing boundaries.
             </p>
             <div class="tab-title">
-              <p
-                class="tab-links active-link"
-                onclick="slideTab(event,'skill')"
-              >
+              <p class="tablinks active" onclick="openCity(event, 'London')">
                 Skill
               </p>
-              <p class="tab-links" onclick="slideTab(event,'education')">
+              <p class="tablinks" onclick="openCity(event, 'Paris')">
                 Education
               </p>
-              <p class="tab-links" onclick="slideTab(event,'exprience')">
+              <p class="tablinks" onclick="openCity(event, 'Tokyo')">
                 Exprience
               </p>
             </div>
-            <div class="tab-contents active-tab" id="skill">
+            <div class="tabcontent active" id="London">
               <ul>
                 <li>
                   <span>UI/UX</span><br />
@@ -85,106 +94,130 @@
                 </li>
               </ul>
             </div>
-            <div class="tab-contents" id="education">
+            <div class="tabcontent" id="Paris">
               <ul>
                 <li>
-                  <span>12th 2015-2017</span><br />
-                  Govt-High-school
+                  <span>MCA 2020-2023</span><br />
+                  Gurugram University
                 </li>
+
                 <li>
                   <span>BCA 2017-2020</span><br />
                   MDU University
                 </li>
                 <li>
-                  <span>MCA 2020-2023</span><br />
-                  Gurugram University
+                  <span>12th 2015-2017</span><br />
+                  Govt-High-school
                 </li>
               </ul>
             </div>
-            <div class="tab-contents" id="exprience">
+            <div class="tabcontent" id="Tokyo">
               <ul>
                 <li>
                   <span>Eazy-Pizy Enterprices</span><br />
-                  Internship App Development
+                  Internship as Front End Developer
                 </li>
                 <li>
-                  <span>Web Development Project</span><br />
-                  Sample Project Practice
+                  Work on a team to design and develop an Android application
+                  for the startup that allows a user to connect customers to get
+                  in touch with one of the nearest local handyman
                 </li>
                 <li>
-                  <span>Collage Project</span><br />
-                  Mantrimotil Web Appliction
+                  Recognize multiple approaches can solve the problem, but be
+                  able to recommend or choose the best solution
                 </li>
+                <li>Designed and developed front end UI/UX</li>
+                <li>Design modified XML and HTML files for the application</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- ----------------------------services------------------------------------------   -->
-    <div id="services">
-      <div class="container">
+    <section id="services">
+      <div class="container container1">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
           <div>
-            <i class="fa-solid fa-crop" style="color: #ffffff"></i>
-            <h1>Front End Design</h1>
+            <i class="fa-solid fa-crop"></i>
+            <h1>Front End Developer</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              tenetur laudantium amet? Non nostrum iste consectetur, itaque modi
-              veritatis culpa obcaecati fuga maiores, porro ab quos, inventore
-              mollitia totam tenetur?
+              Welcome! A proficient front-end developer committed to crafting
+              captivating and user-friendly digital experiences. With expertise
+              in HTML, CSS, JavaScript, and modern frameworks like React, I
+              offer a range of services aimed at helping businesses create
+              dynamic and responsive web applications. I believe in the power of
+              clean and efficient code to bring designs to life. My approach is
+              centered around collaboration and attention to detail, as I work
+              closely with clients to transform their vision into functional and
+              visually appealing web solutions.
             </p>
             <a href="#">Learn More</a>
           </div>
           <div>
-            <i class="fa-solid fa-code" style="color: #ffffff"></i>
-            <h1>Web Developer</h1>
+            <i class="fa-solid fa-code"></i>
+            <h1>UI/UX Designer</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              tenetur laudantium amet? Non nostrum iste consectetur, itaque modi
-              veritatis culpa obcaecati fuga maiores, porro ab quos, inventore
-              mollitia totam tenetur?
+              Welcome! a seasoned UI/UX designer dedicated to delivering
+              top-notch design solutions that enhance user experiences and drive
+              business success. With a focus on user-centered design principles,
+              I offer a range of services aimed at helping businesses create
+              intuitive and visually appealing digital products. I believe in
+              the power of thoughtful design to solve complex problems and
+              delight users. My approach is rooted in empathy and understanding,
+              as I collaborate closely with clients to translate their vision
+              into seamless digital experiences.
             </p>
             <a href="#">Learn More</a>
           </div>
           <div>
-            <i class="fa-brands fa-app-store-ios" style="color: #ffffff"></i>
+            <i class="fa-brands fa-app-store-ios"></i>
             <h1>Flutter development</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              tenetur laudantium amet? Non nostrum iste consectetur, itaque modi
-              veritatis culpa obcaecati fuga maiores, porro ab quos, inventore
-              mollitia totam tenetur?
+              Greetings! A dedicated Flutter developer passionate about creating
+              cross-platform mobile applications with a focus on performance and
+              user experience. With expertise in Dart programming language and
+              the Flutter framework, I offer a range of services aimed at
+              helping businesses bring their mobile app ideas to life. I believe
+              in the power of Flutter to revolutionize mobile app development by
+              enabling rapid prototyping and seamless cross-platform
+              experiences. My approach is rooted in creativity and
+              problem-solving, as I collaborate closely with clients to deliver
+              innovative and user-friendly mobile solutions.
             </p>
             <a href="#">Learn More</a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- ----------------------------Portfolio-----------------------------------------------? -->
-    <div id="porfolio">
+    <section id="porfolio">
       <div class="container">
         <h1 class="sub-title">My Best Work</h1>
         <div class="work-list">
           <div class="work">
-            <img src="images/amazone.PNG" alt="work" />
+            <img src="images/code_editor.PNG" alt="work" />
             <div class="layer">
-              <h3>Amazone Web Clone</h3>
+              <h3>Online Code Editor (2024)</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+                Developed an online code editor using HTML, CSS, and JavaScript,
+                providing users with a platform to write, edit, and test their
+                code in real-time.
               </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <a href="https://shwetabairwa.github.io/code-editor/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
             </div>
           </div>
           <div class="work">
             <img src="images/parallax.PNG" alt="work" />
             <div class="layer">
-              <h3>Amazone Web Clone</h3>
+              <h3>Paralax Web</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+                A Paralax Web Page replicating the giant's interface.This
+                project serves as a practical tool for coding practice,
+                prototyping, and learning purposes.
               </p>
               <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
@@ -192,65 +225,11 @@
           <div class="work">
             <img src="images/music.PNG" alt="work" />
             <div class="layer">
-              <h3>Amazone Web Clone</h3>
+              <h3>Music Web page</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/youtube.PNG" alt="work" />
-            <div class="layer">
-              <h3>Amazone Web Clone</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/blog.PNG" alt="work" />
-            <div class="layer">
-              <h3>Amazone Web Clone</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/landing.PNG" alt="work" />
-            <div class="layer">
-              <h3>Amazone Web Clone</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/rasturent.PNG" alt="work" />
-            <div class="layer">
-              <h3>Amazone Web Clone</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/tribute.PNG" alt="work" />
-            <div class="layer">
-              <h3>Amazone Web Clone</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+                A Music Web Page replicating the giant's interface.This project
+                serves as a practical tool for coding practice, prototyping, and
+                learning purposes.
               </p>
               <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
@@ -258,10 +237,62 @@
           <div class="work">
             <img src="images/amazone.PNG" alt="work" />
             <div class="layer">
-              <h3>Amazone Web Clone</h3>
+              <h3>Amazon Web Clone</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt nisi velit nulla quia autem animi ea facere id fuga
+                An Amazon clone project replicating the e-commerce giant's
+                interface.This project serves as a practical tool for coding
+                practice, prototyping, and learning purposes.
+              </p>
+              <a href="https://shwetabairwa.github.io/amazone-clone/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/blog.PNG" alt="work" />
+            <div class="layer">
+              <h3>Blog Web Page</h3>
+              <p>
+                A Blog Web Page project replicating the giant's interface.This
+                project serves as a practical tool for coding practice,
+                prototyping, and learning purposes.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/landing.PNG" alt="work" />
+            <div class="layer">
+              <h3>Landing Web Page</h3>
+              <p>
+                This project serves as a practical tool for coding practice,
+                prototyping, and learning purposes.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/rasturent.PNG" alt="work" />
+            <div class="layer">
+              <h3>Rastaurent Web clone</h3>
+              <p>
+                A Rastaurent Web clone project replicating the giant's
+                interface.This project serves as a practical tool for coding
+                practice, prototyping, and learning purposes.
+              </p>
+              <a href="https://shwetabairwa.github.io/rastaurent-web/"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/youtube.PNG" alt="work" />
+            <div class="layer">
+              <h3>Youtube Web Clone</h3>
+              <p>
+                A Youtube Web clone project replicating the giant's
+                interface.This project serves as a practical tool for coding
+                practice, prototyping, and learning purposes.
               </p>
               <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
@@ -269,10 +300,10 @@
         </div>
         <a href="#" class="btn">See More</a>
       </div>
-    </div>
+    </section>
     <!-- ----------------------------Contact----------------------------------------- -->
-    <div id="contact">
-      <div class="container">
+    <section id="contact">
+      <div class="container container1">
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
@@ -281,10 +312,16 @@
             </p>
             <p><i class="fa-solid fa-phone"></i>+91-9871617208</p>
             <div class="socail-icons">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/100days_of_code/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/shweta-bairwa27/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
               <a href="#"><i class="fa-brands fa-behance"></i></a>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/shwetabairwa"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
             <a href="Resume/Shweta's Resume.pdf" download class="btn btn2"
               >Download CV</a
@@ -297,6 +334,7 @@
               <textarea
                 name="Massage"
                 rows="6"
+                spellcheck="false"
                 placeholder="Your Massage"
               ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
@@ -305,14 +343,25 @@
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>
-          copyright by sb. made with <i class="fa-solid fa-heart"></i> by Shweta
-          Bairwa
-        </p>
-      </div>
-    </div>
-    <script src="script.js"></script>
+    </section>
+    <footer class="copyright">
+      <p>Made with <i class="fa-solid fa-heart"></i> by Shweta Bairwa</p>
+    </footer>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
     <script>
       var sidemenu = document.getElementById("sidemenu");
       function openmenu() {
@@ -322,9 +371,10 @@
         sidemenu.style.right = "-200px";
       }
     </script>
+
     <script>
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxvk5tIY4Q01ff9JdMMNPl2zMa-A0KOCeaSVL-qvImmbYkveKmq1g5uCs-xysKYoJBh/exec";
+        "https://script.google.com/macros/s/AKfycbwOiGieKD091JlVyg4B3dUcqVbvEjG5YG234fRiyz48c0OIciysVweJCIZU_7f-jeIB/exec";
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
       form.addEventListener("submit", (e) => {
