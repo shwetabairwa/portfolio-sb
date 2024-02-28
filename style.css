@@ -73,7 +73,7 @@ nav ul li a:hover::after {
 }
 .header-text p {
   font-size: 40px;
-  margin-top: -25px;
+  margin-top: -15px;
 }
 /* ----------------------------------about-section------------------------------- */
 #about {
