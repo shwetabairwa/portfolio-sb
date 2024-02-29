@@ -56,17 +56,24 @@
               detail. I believe in the power of collaboration and continuous
               learning, constantly seeking out new technologies and
               methodologies to enhance my skills and deliver innovative
-              solutions. I kickstarted my journey as a Front-End Developer
-              through an internship at Eazy Pizy Enterprise, where I had the
-              opportunity to work on live projects, honing my skills in HTML,
-              CSS, JavaScript, and React. This hands-on experience paved the way
-              for me to tackle a variety of challenges with confidence. From
-              creating a dynamic code editor to crafting a personal portfolio
-              and developing a restaurant application, I've embarked on numerous
-              practice projects that have enriched my understanding of web
-              development. Each project has been a testament to my dedication to
-              continuous improvement and my passion for pushing boundaries.
+              solutions. <span id="dots">...</span
+              ><span id="more"
+                >I kickstarted my journey as a Front-End Developer through an
+                internship at Eazy Pizy Enterprise, where I had the opportunity
+                to work on live projects, honing my skills in HTML, CSS,
+                JavaScript, and React. This hands-on experience paved the way
+                for me to tackle a variety of challenges with confidence. From
+                creating a dynamic code editor to crafting a personal portfolio
+                and developing a restaurant application, I've embarked on
+                numerous practice projects that have enriched my understanding
+                of web development. Each project has been a testament to my
+                dedication to continuous improvement and my passion for pushing
+                boundaries.</span
+              >
             </p>
+            <div class="btnBox">
+              <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
             <div class="tab-title">
               <p class="tablinks active" onclick="openCity(event, 'London')">
                 Skill
@@ -79,20 +86,45 @@
               </p>
             </div>
             <div class="tabcontent active" id="London">
-              <ul>
-                <li>
-                  <span>UI/UX</span><br />
-                  Design Web/App Interface
-                </li>
-                <li>
-                  <span>Web Development</span><br />
-                  Web/App Developer
-                </li>
-                <li>
-                  <span>App Developer</span><br />
-                  Building IOS/Android App
-                </li>
-              </ul>
+              <div class="container0">
+                <div class="skill-box">
+                  <span class="title">HTML</span>
+
+                  <div class="skill-bar">
+                    <span class="skill-per html">
+                      <span class="tooltip">90%</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="skill-box">
+                  <span class="title">CSS</span>
+
+                  <div class="skill-bar">
+                    <span class="skill-per css">
+                      <span class="tooltip">80%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="skill-box">
+                  <span class="title">JavaScript</span>
+
+                  <div class="skill-bar">
+                    <span class="skill-per javascript">
+                      <span class="tooltip">60%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="skill-box">
+                  <span class="title">ReactJS</span>
+
+                  <div class="skill-bar">
+                    <span class="skill-per nodejs">
+                      <span class="tooltip">50%</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="tabcontent" id="Paris">
               <ul>
@@ -298,7 +330,6 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See More</a>
       </div>
     </section>
     <!-- ----------------------------Contact----------------------------------------- -->
@@ -347,48 +378,6 @@
     <footer class="copyright">
       <p>Made with <i class="fa-solid fa-heart"></i> by Shweta Bairwa</p>
     </footer>
-    <script>
-      function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-    </script>
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
-    </script>
-
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwOiGieKD091JlVyg4B3dUcqVbvEjG5YG234fRiyz48c0OIciysVweJCIZU_7f-jeIB/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

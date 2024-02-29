@@ -82,7 +82,7 @@ nav ul li a:hover::after {
 
 .row {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -94,6 +94,18 @@ nav ul li a:hover::after {
 .about-col-1 {
   flex-basis: 30%;
 }
+#more {
+  display: none;
+}
+#myBtn {
+  align-self: end;
+  outline: none;
+  background-color: #fff;
+  border: none;
+  color: #ffea00;
+  margin-top: 15px;
+}
+
 .about-col-1 img {
   width: 100%;
   border-radius: 10px;
@@ -150,6 +162,104 @@ nav ul li a:hover::after {
 }
 .tabcontent.active {
   display: block;
+}
+.container0 {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+
+  border-radius: 7px;
+}
+
+.container0 .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-box .title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.skill-box .skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: #ffea00;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-per.html {
+  /*progreso de las diferentes lenguajes*/
+  width: 90%;
+  animation-delay: 0.3s;
+}
+
+.skill-per.css {
+  /*progreso de las diferentes lenguajes*/
+  width: 80%;
+  animation-delay: 0.3s;
+}
+
+.skill-per.javascript {
+  /*progreso de las diferentes lenguajes*/
+  width: 60%;
+  animation-delay: 0.4s;
+}
+
+.skill-per.nodejs {
+  /*progreso de las diferentes lenguajes*/
+  width: 50%;
+  animation-delay: 0.5s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 600;
+  color: #333;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #ffea00;
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: #ffea00;
+  transform: translateX(-50%) rotate(45deg);
 }
 /* ----------------------------------services-section------------------------------- */
 #services {
@@ -267,10 +377,10 @@ nav ul li a:hover::after {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 3px solid #ffea00;
+  border: 2px solid #ffea00;
   padding: 14px 50px;
   border-radius: 8px;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 18px;
   text-decoration: none;
   color: #ffea00;
@@ -281,6 +391,7 @@ nav ul li a:hover::after {
   color: #fff;
   font-weight: 800;
 }
+
 /* ---------------------Contact-------------------- */
 .contact-left {
   flex-basis: 35%;
@@ -363,14 +474,14 @@ nav .fas {
 /* -------------------------Mobile------------------------- */
 @media only screen and (max-width: 400px) {
   .header-text {
-    margin-top: 70%;
+    margin-top: 50%;
     font-size: 16px;
   }
   .header-text h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
   .header-text p {
-    font-size: 20px;
+    font-size: 25px;
   }
   nav .fas {
     display: block;
@@ -414,6 +525,10 @@ nav .fas {
   }
   .tab-links {
     font-size: 16px;
+  }
+  form input,
+  form textarea {
+    border: #000 solid 0.5px;
   }
   .contact-left,
   .contact-right {
