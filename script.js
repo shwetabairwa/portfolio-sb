@@ -1,4 +1,4 @@
-function openCity(evt, cityName) {
+function openSlide(evt, slideName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -8,9 +8,10 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(slideName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbwOiGieKD091JlVyg4B3dUcqVbvEjG5YG234fRiyz48c0OIciysVweJCIZU_7f-jeIB/exec";
 const form = document.forms["submit-to-google-sheet"];
@@ -41,4 +42,29 @@ function myFunction() {
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
   }
+}
+function openmenu() {
+  document.getElementById("nav-links").classList.add("open");
+  document.getElementById("menu-icon").style.display = "block"; // Hide menu icon when open
+}
+
+function closemenu() {
+  document.getElementById("nav-links").classList.remove("open");
+  document.getElementById("menu-icon").style.display = "block"; // Show menu icon when closed
+}
+function popupFn() {
+  document.getElementById(
+      "overlay"
+  ).style.display = "block";
+  document.getElementById(
+      "popupDialog"
+  ).style.display = "block";
+}
+function closeFn() {
+  document.getElementById(
+      "overlay"
+  ).style.display = "none";
+  document.getElementById(
+      "popupDialog"
+  ).style.display = "none";
 }

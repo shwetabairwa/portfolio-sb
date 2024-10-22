@@ -11,29 +11,74 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>SB portfolio</title>
   </head>
   <body>
-    <nav>
+    <header>
       <div class="logo">
-        <h1>SB <span class="color">portfolio.</span></h1>
+        <img src="images/logo.png" alt="SB" />
+        <p>portfolio.</p>
       </div>
-      <ul id="sidemenu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#porfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-      </ul>
-      <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-    </nav>
-    <section>
+      <nav>
+        <!-- Checkbox for toggling menu -->
+        <input type="checkbox" id="check" />
+        <!-- Menu icon -->
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <!-- Site logo -->
+
+        <!-- Navigation links -->
+        <ul>
+          <div class="logo1">
+            <img src="images/logo.png" alt="SB" />
+          </div>
+          <li><a class="active" href="#home">Home</a></li>
+
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#porfolio">Porfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ----------------------------NavBar------------------------------------- -->
+    <section id="home">
       <div class="container">
-        <div id="header">
-          <div class="header-text">
-            <h1>Hi, I am <span class="color">Shweta</span></h1>
-            <p>Front-end Developer</p>
+        <div class="row0">
+          <div class="home-left">
+            <div class="home-text">
+              <h1>Hi, I'm Shweta Bairwa</h1>
+              <h2 class="head-text color">FRONT END DEVELOPER</h2>
+              <p>
+                I am a passionate front-end developer with expertise in HTML,
+                CSS, JavaScript, and React.js, specializing in creating
+                responsive, visually engaging, and user-friendly web
+                applications. My focus is on delivering high-quality code and
+                seamless user experiences, utilizing modern web development
+                practices.
+              </p>
+
+              <div class="contain">
+                <a href="#contact" class="btn btn1">Let’s Connect!</a>
+                <span></span>
+                <a href="https://www.instagram.com/the_code_journey/">
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+
+                <a href="https://www.linkedin.com/in/shweta-bairwa27/"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+                <a href="https://github.com/shwetabairwa"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="home-right">
+            <img src="images/Blog post-bro.png" alt="#" />
           </div>
         </div>
       </div>
@@ -43,49 +88,87 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/A profile image.jpeg" alt="#" />
+            <img src="images/Typing-bro.png" alt="#" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About <span class="color">me.</span></h1>
+            <h2 class="head-text">
+              Hello, I'm Shweta, a versatile Front-End Developer based in
+              Gurugram
+            </h2>
             <p>
-              Hello, I'm Shweta, a versatile Front-End Developer and Flutter
-              Developer based in Gurugram. With a post-graduation degree from
-              Gurugram College, I'm passionate about crafting seamless digital
-              experiences that bring ideas to life. My approach to work is
-              guided by a relentless pursuit of excellence and a keen eye for
-              detail. I believe in the power of collaboration and continuous
-              learning, constantly seeking out new technologies and
-              methodologies to enhance my skills and deliver innovative
-              solutions. <span id="dots">...</span
-              ><span id="more"
-                >I kickstarted my journey as a Front-End Developer through an
-                internship at Eazy Pizy Enterprise, where I had the opportunity
-                to work on live projects, honing my skills in HTML, CSS,
-                JavaScript, and React. This hands-on experience paved the way
-                for me to tackle a variety of challenges with confidence. From
-                creating a dynamic code editor to crafting a personal portfolio
-                and developing a restaurant application, I've embarked on
-                numerous practice projects that have enriched my understanding
-                of web development. Each project has been a testament to my
-                dedication to continuous improvement and my passion for pushing
-                boundaries.</span
-              >
+              With a post-graduation degree from Gurugram University, I'm
+              passionate about crafting seamless digital experiences that bring
+              ideas to life. My approach is guided by a relentless pursuit of
+              excellence and a keen eye for detail.
             </p>
-            <div class="btnBox">
+            <p>
+              I believe in the power of collaboration and continuous learning,
+              constantly seeking new technologies and methodologies to enhance
+              my skills and deliver innovative solutions. I kickstarted my
+              journey as a Front-End Developer through an internship at Eazy
+              Pizy Enterprise, where I worked on live projects, honing my
+              expertise in HTML, CSS, JavaScript, and React. This hands-on
+              experience has equipped me to tackle a variety of challenges with
+              confidence.
+            </p>
+            <p>
+              From developing a dynamic code editor to creating a personal
+              portfolio and a restaurant application, I've embarked on numerous
+              projects that have deepened my understanding of web development.
+              Each project reflects my dedication to continuous improvement and
+              my passion for pushing the boundaries of what's possible in web
+              development.
+            </p>
+            <!-- <div class="btnBox">
               <button onclick="myFunction()" id="myBtn">Read more</button>
-            </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------hide tab------------------------ -->
+    <section class="hide-tab">
+      <div class="container1">
+        <div class="row row1">
+          <div class="tab-left">
+            <h2 class="head-text">
+              Creative An Perfestional Skills Experience on Few Area
+            </h2>
+            <p>
+              Shweta is a skilled front-end developer specializing in creating
+              dynamic, responsive websites using HTML, CSS, JavaScript, and
+              React.js. With a sharp eye for detail, she brings designs to life
+              with pixel-perfect execution and adds interactive elements to
+              enhance user experiences. Her expertise extends to integrating 3D
+              features that add depth to her projects.
+            </p>
+            <p>
+              In addition to her technical skills, Shweta is proficient in
+              project management, ensuring timely and high-quality delivery of
+              work, demonstrating her commitment to excellence in web
+              development.
+            </p>
+            <a
+              href="Resume/ShwetaBairwa_Frontend_Developer_0to1YrExp.pdf"
+              download
+              class="btn btn1"
+              >Download CV</a
+            >
+          </div>
+          <div class="tab-right">
             <div class="tab-title">
-              <p class="tablinks active" onclick="openCity(event, 'London')">
+              <p class="tablinks active" onclick="openSlide(event, 'skills')">
                 Skill
               </p>
-              <p class="tablinks" onclick="openCity(event, 'Paris')">
+              <p class="tablinks" onclick="openSlide(event, 'education')">
                 Education
               </p>
-              <p class="tablinks" onclick="openCity(event, 'Tokyo')">
-                Exprience
+              <p class="tablinks" onclick="openSlide(event, 'experience')">
+                Experience
               </p>
             </div>
-            <div class="tabcontent active" id="London">
+            <div class="tabcontent active" id="skills">
               <div class="container0">
                 <div class="skill-box">
                   <span class="title">HTML</span>
@@ -111,7 +194,7 @@
 
                   <div class="skill-bar">
                     <span class="skill-per javascript">
-                      <span class="tooltip">60%</span>
+                      <span class="tooltip">80%</span>
                     </span>
                   </div>
                 </div>
@@ -120,46 +203,72 @@
 
                   <div class="skill-bar">
                     <span class="skill-per nodejs">
-                      <span class="tooltip">50%</span>
+                      <span class="tooltip">70%</span>
                     </span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tabcontent" id="Paris">
+            <div class="tabcontent" id="education">
               <ul>
-                <li>
-                  <span>MCA 2020-2023</span><br />
-                  Gurugram University
-                </li>
-
-                <li>
-                  <span>BCA 2017-2020</span><br />
-                  MDU University
-                </li>
-                <li>
-                  <span>12th 2015-2017</span><br />
-                  Govt-High-school
+                <li class="edu">
+                  <div>
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span>Master of Computer Application</span>
+                    <p>
+                      I hold a Master of Computer Applications in year 2024
+                      (MCA) from Gurugram University.
+                    </p>
+                  </div>
+                  <span class="line"></span>
+                  <div>
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span>Bachelor of Computer Applications 2020</span>
+                    <p>
+                      I completed my Bachelor of Computer Applications (BCA) in
+                      year 2020 from Maharshi Dayanand University.
+                    </p>
+                  </div>
+                  <span class="line"></span>
+                  <div>
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span> Senior High School 2017</span>
+                    <p>Govt-High-school In year 2017</p>
+                  </div>
                 </li>
               </ul>
             </div>
-            <div class="tabcontent" id="Tokyo">
+            <div class="tabcontent" id="experience">
               <ul>
                 <li>
-                  <span>Eazy-Pizy Enterprices</span><br />
-                  Internship as Front End Developer
+                  <span
+                    ><i class="fa-solid fa-laptop-code"></i>Eazy-Pizy
+                    Enterprices</span
+                  ><br />
                 </li>
+                <li class="bold">Internship as Front End Developer</li>
                 <li>
-                  Work on a team to design and develop an Android application
-                  for the startup that allows a user to connect customers to get
-                  in touch with one of the nearest local handyman
+                  <div class="ex-list">
+                    <li>
+                      Collaborated with a team to design and develop an Android
+                      application that connects users with local handymen.
+                    </li>
+                    <li>
+                      Identified multiple approaches to solve problems and
+                      recommended the best solutions to optimize user experience
+                      and functionality.
+                    </li>
+                    <li>
+                      Designed and developed the front-end UI/UX of the
+                      application, ensuring an intuitive and visually appealing
+                      interface.
+                    </li>
+                    <li>
+                      Modified XML and HTML files to implement the application's
+                      design and functionality.
+                    </li>
+                  </div>
                 </li>
-                <li>
-                  Recognize multiple approaches can solve the problem, but be
-                  able to recommend or choose the best solution
-                </li>
-                <li>Designed and developed front end UI/UX</li>
-                <li>Design modified XML and HTML files for the application</li>
               </ul>
             </div>
           </div>
@@ -168,56 +277,65 @@
     </section>
     <!-- ----------------------------services------------------------------------------   -->
     <section id="services">
-      <div class="container container1">
-        <h1 class="sub-title">My Services</h1>
+      <div class="container">
+        <h1 class="sub-title">
+          Awesome<span class="color"> Services For You</span>
+        </h1>
         <div class="services-list">
-          <div>
+          <div class="card">
             <i class="fa-solid fa-crop"></i>
             <h1>Front End Developer</h1>
             <p>
-              Welcome! A proficient front-end developer committed to crafting
+              Welcome! I am a dedicated front-end developer focused on creating
               captivating and user-friendly digital experiences. With expertise
               in HTML, CSS, JavaScript, and modern frameworks like React, I
-              offer a range of services aimed at helping businesses create
-              dynamic and responsive web applications. I believe in the power of
-              clean and efficient code to bring designs to life. My approach is
-              centered around collaboration and attention to detail, as I work
-              closely with clients to transform their vision into functional and
-              visually appealing web solutions.
+              specialize in developing dynamic and responsive web applications.
+              I believe in the power of clean and efficient code to bring
+              designs to life. My approach emphasizes collaboration and
+              attention to detail, working closely with teams to transform ideas
+              into functional, visually appealing web solutions.
             </p>
+            <div class="go-corner" href="#">
+              <div class="go-arrow">→</div>
+            </div>
             <a href="#">Learn More</a>
           </div>
-          <div>
+          <div class="card">
             <i class="fa-solid fa-code"></i>
             <h1>UI/UX Designer</h1>
             <p>
-              Welcome! a seasoned UI/UX designer dedicated to delivering
+              Welcome! I am a seasoned UI/UX designer dedicated to delivering
               top-notch design solutions that enhance user experiences and drive
-              business success. With a focus on user-centered design principles,
-              I offer a range of services aimed at helping businesses create
-              intuitive and visually appealing digital products. I believe in
-              the power of thoughtful design to solve complex problems and
-              delight users. My approach is rooted in empathy and understanding,
-              as I collaborate closely with clients to translate their vision
-              into seamless digital experiences.
+              business success. With a strong focus on user-centered design
+              principles, I offer services that help businesses create
+              intuitive, visually appealing digital products. I believe in the
+              power of thoughtful design to solve complex problems and delight
+              users. My approach is rooted in empathy and understanding,
+              collaborating closely with clients to translate their vision into
+              seamless and impactful digital experiences.
             </p>
+            <div class="go-corner" href="#">
+              <div class="go-arrow">→</div>
+            </div>
             <a href="#">Learn More</a>
           </div>
-          <div>
+          <div class="card">
             <i class="fa-brands fa-app-store-ios"></i>
-            <h1>Flutter development</h1>
+            <h1>Web Developer</h1>
             <p>
-              Greetings! A dedicated Flutter developer passionate about creating
-              cross-platform mobile applications with a focus on performance and
-              user experience. With expertise in Dart programming language and
-              the Flutter framework, I offer a range of services aimed at
-              helping businesses bring their mobile app ideas to life. I believe
-              in the power of Flutter to revolutionize mobile app development by
-              enabling rapid prototyping and seamless cross-platform
-              experiences. My approach is rooted in creativity and
-              problem-solving, as I collaborate closely with clients to deliver
-              innovative and user-friendly mobile solutions.
+              Web Developer Welcome! I am a seasoned web developer dedicated to
+              delivering top-notch solutions that enhance user experiences and
+              drive business success. With a focus on clean code and modern web
+              technologies, I specialize in creating responsive, dynamic, and
+              visually appealing digital products. I believe in the power of
+              thoughtful development to solve complex problems and delight
+              users. My approach is rooted in collaboration and attention to
+              detail, working closely with clients to translate their vision
+              into seamless and efficient web experiences.
             </p>
+            <div class="go-corner" href="#">
+              <div class="go-arrow">→</div>
+            </div>
             <a href="#">Learn More</a>
           </div>
         </div>
@@ -226,107 +344,119 @@
     <!-- ----------------------------Portfolio-----------------------------------------------? -->
     <section id="porfolio">
       <div class="container">
-        <h1 class="sub-title">My Best Work</h1>
+        <h1 class="sub-title sub-title1">
+          My <span class="color">Best Work</span>
+        </h1>
         <div class="work-list">
           <div class="work">
             <img src="images/code_editor.PNG" alt="work" />
             <div class="layer">
-              <h3>Online Code Editor (2024)</h3>
-              <p>
-                Developed an online code editor using HTML, CSS, and JavaScript,
-                providing users with a platform to write, edit, and test their
-                code in real-time.
-              </p>
-              <a href="https://shwetabairwa.github.io/code-editor/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
+              <span>
+                <h3>Online Code Editor</h3>
+                <p>
+                  Developed an online code editor using HTML, CSS, and
+                  JavaScript, providing users with a platform to write, edit,
+                  and test their code in real-time.
+                </p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
             </div>
           </div>
           <div class="work">
             <img src="images/parallax.PNG" alt="work" />
             <div class="layer">
-              <h3>Paralax Web</h3>
-              <p>
-                A Paralax Web Page replicating the giant's interface.This
-                project serves as a practical tool for coding practice,
-                prototyping, and learning purposes.
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <span
+                ><h3>Paralax Web</h3>
+                <p>
+                  A Paralax Web Page replicating the giant's interface.This
+                  project serves as a practical tool for coding practice,
+                  prototyping, and learning purposes.
+                </p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
             </div>
           </div>
           <div class="work">
             <img src="images/music.PNG" alt="work" />
             <div class="layer">
-              <h3>Music Web page</h3>
-              <p>
-                A Music Web Page replicating the giant's interface.This project
-                serves as a practical tool for coding practice, prototyping, and
-                learning purposes.
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <span>
+                <h3>Music Web page</h3>
+                <p>
+                  A Music Web Page replicating the giant's interface.This
+                  project serves as a practical tool for coding practice,
+                  prototyping, and learning purposes.
+                </p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></span>
             </div>
           </div>
           <div class="work">
             <img src="images/amazone.PNG" alt="work" />
             <div class="layer">
-              <h3>Amazon Web Clone</h3>
-              <p>
-                An Amazon clone project replicating the e-commerce giant's
-                interface.This project serves as a practical tool for coding
-                practice, prototyping, and learning purposes.
-              </p>
-              <a href="https://shwetabairwa.github.io/amazone-clone/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
+              <span>
+                <h3>Amazon Web Clone</h3>
+                <p>
+                  An Amazon clone project replicating the giant's interface.This
+                  project serves as practice, prototyping, and learning
+                  purposes.
+                </p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
             </div>
           </div>
           <div class="work">
             <img src="images/blog.PNG" alt="work" />
             <div class="layer">
-              <h3>Blog Web Page</h3>
-              <p>
-                A Blog Web Page project replicating the giant's interface.This
-                project serves as a practical tool for coding practice,
-                prototyping, and learning purposes.
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <span>
+                <h3>Blog Web Page</h3>
+                <p>
+                  A Blog Web Page project replicating the giant's interface.This
+                  project serves as a practical tool for coding practice,
+                  prototyping, and learning purposes.
+                </p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
             </div>
           </div>
           <div class="work">
             <img src="images/landing.PNG" alt="work" />
             <div class="layer">
-              <h3>Landing Web Page</h3>
-              <p>
-                This project serves as a practical tool for coding practice,
-                prototyping, and learning purposes.
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <span>
+                <h3>Landing Web Page</h3>
+                <p>
+                  This project serves as a practical tool for coding practice,
+                  prototyping, and learning purposes.
+                </p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
             </div>
           </div>
           <div class="work">
             <img src="images/rasturent.PNG" alt="work" />
             <div class="layer">
-              <h3>Rastaurent Web clone</h3>
-              <p>
-                A Rastaurent Web clone project replicating the giant's
-                interface.This project serves as a practical tool for coding
-                practice, prototyping, and learning purposes.
-              </p>
-              <a href="https://shwetabairwa.github.io/rastaurent-web/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
+              <span>
+                <h3>Rastaurent Web clone</h3>
+                <p>
+                  A Rastaurent Web clone project replicating the giant's
+                  interface.This project serves as a practical tool for coding
+                  practice, prototyping, and learning purposes.
+                </p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
             </div>
           </div>
           <div class="work">
             <img src="images/youtube.PNG" alt="work" />
             <div class="layer">
-              <h3>Youtube Web Clone</h3>
-              <p>
-                A Youtube Web clone project replicating the giant's
-                interface.This project serves as a practical tool for coding
-                practice, prototyping, and learning purposes.
-              </p>
-              <a href="#"><i class="fa-solid fa-link"></i></a>
+              <span>
+                <h3>Youtube Web Clone</h3>
+                <p>
+                  A Youtube Web clone project replicating the giant's
+                  interface.This project serves as a practical tool for coding
+                  practice, prototyping, and learning purposes.
+                </p>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
             </div>
           </div>
         </div>
@@ -334,49 +464,95 @@
     </section>
     <!-- ----------------------------Contact----------------------------------------- -->
     <section id="contact">
-      <div class="container container1">
-        <div class="row">
+      <div class="container2">
+        <h2 class="head-text">Let's Talk with Us</h2>
+        <p>
+          We're here to help and would love to hear from you! Whether you have
+          questions, feedback, or just want to chat, feel free to reach out. Our
+          team is dedicated to providing you with the best support and guidance.
+          Let's connect and discuss how we can assist you further!
+        </p>
+        <button class="btn2 btn1" onclick="popupFn()">Contact Us</button>
+      </div>
+
+      <div id="overlay"></div>
+      <div id="popupDialog">
+        <div class="row row4">
           <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fa-solid fa-paper-plane"></i>Shwetabairwa027@gmail.com
-            </p>
-            <p><i class="fa-solid fa-phone"></i>+91-9871617208</p>
-            <div class="socail-icons">
-              <a href="https://www.instagram.com/100days_of_code/"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/shweta-bairwa27/"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-              <a href="#"><i class="fa-brands fa-behance"></i></a>
-              <a href="https://github.com/shwetabairwa"
-                ><i class="fa-brands fa-github"></i
-              ></a>
+            <span></span>
+            <div class="contact-info">
+              <div class="details">
+                <p class="bold">Contact Info</p>
+              </div>
+              <div class="details">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Shwetabairwa027@gmail.com</p>
+              </div>
+              <div class="details">
+                <i class="fa-solid fa-phone"></i>
+                <p>+91-9871617208</p>
+              </div>
+
+              <div class="details">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Haryana, Gurugram</p>
+              </div>
+              <div class="contain">
+                <a href="https://www.instagram.com/the_code_journey/">
+                  <i class="fa-brands fa-instagram"></i
+                ></a>
+
+                <a href="https://www.linkedin.com/in/shweta-bairwa27/"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+                <a href="https://github.com/shwetabairwa"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
             </div>
-            <a href="Resume/Shweta's Resume.pdf" download class="btn btn2"
-              >Download CV</a
-            >
           </div>
           <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" />
-              <input type="email" name="Email" placeholder="Your Email" />
-              <textarea
-                name="Massage"
-                rows="6"
-                spellcheck="false"
-                placeholder="Your Massage"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
+            <span class="cross"
+              ><i class="fa-solid fa-xmark" onclick="closeFn()"></i
+            ></span>
+            <div class="contact-form">
+              <h1 class="sub-title">Contact <span class="color">Me</span></h1>
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" />
+                <input type="email" name="Email" placeholder="Your Email" />
+                <textarea
+                  name="Massage"
+                  rows="6"
+                  spellcheck="false"
+                  placeholder="Your Massage"
+                ></textarea>
+                <button class="btn2 btn3 btn1" type="submit">
+                  Send Message
+                </button>
+              </form>
+              <span id="msg"></span>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <footer class="copyright">
       <p>Made with <i class="fa-solid fa-heart"></i> by Shweta Bairwa</p>
+      <div class="contain contain1">
+        <a href="https://www.instagram.com/the_code_journey/">
+          <i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a href="https://www.linkedin.com/in/shweta-bairwa27/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="#"><i class="fa-brands fa-behance"></i></a>
+        <a href="https://github.com/shwetabairwa"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>
